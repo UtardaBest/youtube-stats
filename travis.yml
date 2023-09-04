@@ -7,7 +7,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t utardabest/youtube-stats -f Dockerfile.dev .
+  - docker build -t utardabest/youtube-stats -f Dockerfile .
   
 script:
   - docker run utardabest/youtube-stats npm run build
